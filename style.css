@@ -677,8 +677,27 @@ body {
     top: 10%;
     left: 50%;
   }
+  .paperHeart1,
+  .paperHeart3,
+  .paperHeart5 {
+    left: 50px;
+  }
+
+  .paperHeart2,
+  .paperHeart4,
+  .paperHeart6 {
+    left: 250px;
+  }
+  .paperHeart {
+    animation:
+      hiddenHeart 5s linear forwards,
+      flyHeart 10s ease-in-out calc(var(--time) + 8s) infinite;
+  }
 }
 @media (max-width: 414px) {
+    .paperHeart {
+        width: 40%;
+      }
   .cloudBtn {
     height: 70px;
     width: 70px;
