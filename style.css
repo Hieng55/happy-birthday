@@ -517,7 +517,7 @@ body {
   gap: 20px;
   transition: 0.5s;
 }
-.cardValentine .left .leftBack h3{
+.cardValentine .left .leftBack h3 {
   color: #ffccd5;
   font-family: 'Pacifico', cursive;
   font-weight: 200;
@@ -661,5 +661,55 @@ body {
 
   100% {
     top: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .boxTitle {
+    font-size: 70px;
+  }
+  .paperHeart {
+    width: 30%;
+  }
+  .cardValentine .left,
+  .cardValentine .right {
+    width: 30%;
+    height: 70%;
+    top: 10%;
+    left: 50%;
+  }
+}
+@media (max-width: 414px) {
+  .cloudBtn {
+    height: 70px;
+    width: 70px;
+    display: none;
+    box-shadow: none;
+  }
+
+  .cloudBtn::before {
+    display: none;
+  }
+  .openBtn {
+    top: 90%;
+  }
+  .cardValentine .left,
+  .cardValentine .right {
+    width: 22%;
+    height: 60%;
+    top: 10%;
+    left: 50%;
+  }
+  .des {
+    font-size: 15px;
+  }
+  .letterContent {
+    font-size: 11px;
+    font-weight: 100;
+  }
+  .cardValentine .left .leftBack h3 {
+    font-size: 14px;
+  }
+  .rightContent {
+    padding: 10px;
   }
 }
